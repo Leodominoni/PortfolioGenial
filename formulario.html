@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_formulario.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Contato</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nome:</label>
+                <input type="text" id="username"/>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email"/>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone"/>
+            </div>
+            <div class="form-control">
+                <label for="msg">Mensagem:</label>
+                <textarea row="6" style="width: 20em" id="msg"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <section>
+        <button><a href="index.html" id="voltar">Voltar a página inicial</a></button>
+    </section>
+   <script src="https://kit.fontawesome.com/5b37a74041.js" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+</body>
+</html>
