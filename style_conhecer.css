@@ -198,13 +198,13 @@ body{
 }
       
 .service .box-container .box img {
-    height: 20rem;
+    height: 18rem;
     width: 20rem;
 }
       
 .service .box-container .box h2 {
-    padding-top: .5rem;
-    color: var(--cor2)
+    padding-top: 1rem;
+    color: var(--cor2);
 }
       
 .service .box-container .box:hover {
@@ -212,7 +212,7 @@ body{
 }
       
 .service .box-container .box:hover h2 {
-    color: var(--cor6);
+    color: var(--cor3);
 }
 #link-topo{
     text-decoration: none;

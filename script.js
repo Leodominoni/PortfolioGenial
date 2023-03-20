@@ -1,8 +1,8 @@
-const form = document.getElementById('form')
-const username = document.getElementById('username')
-const email = document.getElementById('email')
-const telefone = document.getElementById('telefone')
-const msg = document.getElementById('msg')
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const telefone = document.getElementById('telefone');
+const msg = document.getElementById('msg');
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -23,17 +23,17 @@ function checkInput(){
     }
 
     if(emailValue === ''){
-        setErrorFor(email, 'Por favor digite seu email')
+        setErrorFor(email, 'Por favor digite seu email');
     }else if(!checkEmail(emailValue)){
         setErrorFor(email, "Por favor, insira um email válido.");
     }else{
-        setSuccessFor(email)
+        setSuccessFor(email);
     }
 }
 
 function setErrorFor(input, mensage){
     const formControl = input.parentElement;
-    const small = formControl.querySelector('small')
+    const small = formControl.querySelector('small');
 
     //add a msg de erro
     small.innerText = mensage;
@@ -44,11 +44,11 @@ function setErrorFor(input, mensage){
 function setSuccessFor(input, mensage){
     const formControl = input.parentElement;
 
-    //Adicionar a classe de Erro
+    //Add a classe de Erro
     formControl.className = 'form-control success';
 }
 function checkEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
       email
     );
-  }
+}
