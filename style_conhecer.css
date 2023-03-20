@@ -94,8 +94,7 @@ body{
       
 .about .info h2 {
     font-size: 2rem;
-    color: var(--cor4);
-    
+    color: var(--cor4);    
 }
       
 .about .info p {
@@ -192,18 +191,19 @@ body{
     background: var(--cor4);
     cursor: pointer;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 1rem;
     margin: 2rem;
     border-radius: .5rem;
+    box-shadow: 5px 5px 5px var(--cor5);
 }
       
 .service .box-container .box img {
-    height: 10rem;
-    width: 10rem;
+    height: 20rem;
+    width: 20rem;
 }
       
 .service .box-container .box h2 {
-    padding-top: 1rem;
+    padding-top: .5rem;
     color: var(--cor2)
 }
       
@@ -224,5 +224,4 @@ body{
     right: 10px;
     bottom: 10px;
     box-shadow: 3px 3px 10px var(--cor5);
-
 }
